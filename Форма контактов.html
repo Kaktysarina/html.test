@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма отправки</title>
+    <style>
+        label {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1> Свяжитесь со мной </h1>
+            <form action="#">
+            <div>
+                <div>
+                    <label for="email" style="color: red">E-mail*</label> <!--стилизация через Стайл неудобна копипастой в каждую строку-->
+                    <input 
+                    type="email" 
+                    placeholder="Введите email" 
+                    id="email" 
+                    name="email"
+                    required />
+                </div>
+                <div>
+                    <label for="tg">Telegram*</label>
+                    <input 
+                    type="text" 
+                    placeholder="Введите ник в Telegram" 
+                    id="tg" 
+                    name="tg"
+                    required/>
+                </div>
+                <div>
+                    <label for="topic">Тема</label>
+                    <select name="topic" id="topic">
+                        <option value="courses" selected>Приобретение курсов </option>
+                        <option value="consult">Консультация </option>
+                        <option value="other">Другой вопрос </option>
+                    </select> 
+                </div>
+                <div>
+                    <label for="comment">Введите комменатарий</label>
+                    <textarea
+                    name="comment"
+                    id="comment"
+                    rows="10"
+                    cols="30"
+                    placeholder="Комментарий">
+                    </textarea>
+                </div>
+                <div>
+                    <button type="submit">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
