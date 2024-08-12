@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>поиск</title>
+</head>
+<body>
+    <form action="https://www.youtube.com/results" method="get">
+        <div>
+            <label for="query">Введите запрос</label>
+            <input 
+            type="text" 
+            placeholder="Запрос" 
+            id="query" 
+            name="search_query"
+            minlength="3"
+            required 
+            maxlength="20"/> <!--required валидация: обязательное поле-->
+            <!--minlength это кол-во символов-->
+        </div>
+        <div>
+            <!--галочка да/нет-->
+            <label for="agree">согласен с обработкой данных</label>
+            <input 
+            type="checkbox" 
+            name="agree" 
+            id="agree">
+        </div>
+        <div>
+            <!--выбор кружочек, одинаковый name позволяет выбрать 1 из 2-->
+            <input 
+            type="radio" 
+            name="search"
+            id="all" 
+            value="all"/>
+            <label for="all">Поиск везде</label>
+        </div>
+        <div>
+            <!--выбор кружочек-->
+            <input 
+            type="radio" 
+            name="search" 
+            id="youtube" 
+            value="youtube"/>
+            <label for="youtube">Поиск на ютуб</label>
+        </div>
+        <div>
+            <!--выбор в выпадающем списке-->
+            <label for="topic">Тематика</label>
+            <select name="topic" id="topic"> 
+                <option value="1">Все</option>
+                <!--объединение в группу внутри списка-->
+                <optgroup label="Популярные">
+                    <option value="2">Животные</option>
+                    <option value="3" selected>Игры</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="volume">Громкость</label>
+            <input 
+            type="range" 
+            name="volume" 
+            id="volume" 
+            min="0" 
+            max="10" 
+            step="2"/>
+        </div>
+        <div>
+            <!--выбор цифр вверх вниз-->
+            <label for="age">Возраст</label>
+            <input 
+            type="number" 
+            name="age" 
+            id="age" 
+            min="18" 
+            max="100" />
+        </div>
+        <div>
+            <div>
+                <!--большое поле для ввода текста-->
+                <label for="text">комментарий</label>
+                <textarea 
+                name="text" 
+                id="text" 
+                rows="10" 
+                cols="10" 
+                placeholder="введите текст">
+                </textarea>
+            </div>
+            <div>
+            <button type="submit">
+            Искать на ютуб
+            </button>
+            <button type="reset">
+                Сбросить
+            </button>
+        </div>
+    </form>
+</body>
+</html>

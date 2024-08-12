@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="/test">
+        <input type="hidden" name="hid" />
+        <div>
+            <label for="email">Введите почту</label>
+            <input type="email" placeholder="Emal пользователя" id="email" name="email"/>
+        </div>
+        <div>
+            <label for="password">Введите пароль</label>
+            <input type="password" placeholder="Пароль пользователя" id="password" name="password"/>
+        </div>
+        <div>
+            <label for="datedirth">Введите дату рождения</label>
+            <input type="date" placeholder="Дата рождения пользователя" id="datedirth" name="datedirth"/>
+            <label for="color">Выберите цвет</label>
+            <input type="color" id="color" id="color" name="color"/>
+        </div>
+        <button type="reset">
+            сброс формы
+        </button>
+        <button type="submit">
+            Кнопка
+        </button>
+    </form>
+</body>
+</html>
