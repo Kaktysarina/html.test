@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма отправки</title>
+    <link rel="stylesheet" href="C:\Users\Nenav\OneDrive\Документы\GitHub\html.test\2 - purpleform\styles\style.css">
+</head>
+<body>
+    <main>
+            <h1>Свяжитесь со мной</h1>
+            <form action="#">
+                <div class="backlabel">
+                    <label for="email">E-mail*</label>
+                    <input 
+                    type="email" 
+                    placeholder="Введите email" 
+                    id="email" 
+                    name="email"
+                    required />
+                </div>
+                <div class="backlabel">
+                    <label for="tg">Telegram*</label>
+                    <input 
+                    type="text" 
+                    placeholder="Введите ник в Telegram" 
+                    id="tg" 
+                    name="tg"
+                    required/>
+                </div>
+                <div class="backlabel"> 
+                    <label for="topic">Тема</label>
+                    <select name="topic" id="topic">
+                        <option value="courses" selected>Приобретение курсов </option>
+                        <option value="consult">Консультация </option>
+                        <option value="other">Другой вопрос </option>
+                    </select> 
+                </div>
+                <div>
+                    <label for="comment">Введите комменатарий</label>
+                    <textarea
+                    name="comment"
+                    id="comment"
+                    placeholder="Комментарий">
+                    </textarea>
+                </div>
+                    <button type="submit">
+                        Отправить
+                    </button>
+            </form>
+    </main>
+</body>
+</html>
