@@ -1,0 +1,99 @@
+:root {
+    --color-bg: #FEF9F3;
+    --color-bg-forms: #FCF8F7;
+    --color-orange: #FF8C00;
+    --color-ph: #FDCD94;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Высота экрана */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+main {
+  width: 546px;
+  height: 406px;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+  font-family: "Fira Sans", system-ui;
+    font-weight: 600;
+    line-height: 120%;
+}
+.form__div {
+    display: flex;
+    flex-flow: column;
+    font-size: 22px;
+    color: var(--color-orange);
+    margin-bottom: 20px;
+}
+.form__div label {
+    margin-bottom: 8px;
+}
+.form__div input {
+    font-size: 22px;
+    background-color: var(--color-bg-forms);
+    border-color: var(--color-orange);
+    border-width: 0.68px;
+    border-radius: 6.8px;
+    padding: 7px;
+    min-width: 470px;
+}
+input::placeholder {
+    color: var(--color-ph);
+    font-weight: 600;
+    font-family: "Fira Sans", system-ui;
+    border-color: var(--color-orange);
+    background-color: var(--color-bg-forms);
+}
+.form__div input:focus {
+    border-color: var(--color-orange);
+    color: var(--color-orange);
+}
+.down {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.button_enter {
+    font-size: 20px;
+    padding: 8px 52px;
+    border-style: none;
+    border-radius: 6.8px;
+    background-color: var(--color-orange);
+    color: #fafafa;
+    font-family: "Fira Sans", system-ui;
+    font-weight: medium;
+    transition: all 0.3s;
+}
+.button_create {
+    font-size: 16px;
+    padding: 10.5px 12px;
+    border-radius: 6.8px;
+    border-color: var(--color-orange);
+    border-style: solid;
+    color: var(--color-orange);
+    font-family: "Fira Sans", system-ui;
+    font-weight: 500;
+    background-color: var(--color-bg-forms);
+    transition: all 0.3s;
+}
+
+.button_enter:hover {
+    background-color: #FF6B00;
+    font-size: 24px;
+}
+.button_create:hover {
+    font-size: 18px;
+}
+h1 {
+    font-size: 28px;
+    margin: 0;
+    color: var(--color-orange);
+    font-weight: 500;
+    justify-content: baseline;
+}
